@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:id="@+id/recordinglayout"
+    android:orientation="horizontal">
+    <ImageView
+        android:background="@drawable/circularimage"
+        android:layout_margin="16dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/ic_keyboard_voice_black_24dp"/>
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:id="@+id/recordingname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="recording_###.3gp"/>
+        <TextView
+            android:layout_marginVertical="4dp"
+            android:id="@+id/recordingtotaltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.23"/>
+        <TextView
+            android:id="@+id/recordedtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5/23/2019,11:10"/>
+    </LinearLayout>
+</LinearLayout>
